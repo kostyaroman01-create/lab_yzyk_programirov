@@ -1,4 +1,4 @@
-<img width="173" height="184" alt="image" src="https://github.com/user-attachments/assets/bb0bfb77-9091-49a4-ad43-a71cda6ff79e" /># Языки программирования
+# Языки программирования
 ## Лабораторная работа 5
 
 ### Задание 1 **(2)**

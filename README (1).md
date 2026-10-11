@@ -319,6 +319,54 @@ $\frac{p}{q}$, *где* $p$ *и* $q$ - *целые числа.) Напишите
 двух первых чисел с суммой двух последних чисел. Программа должна выводить* $1$, $0$ *или* $-1$
 *в зависимости от результатов сравнения. Решение можно проверить в проверяющей системе*
 [http://olymp3.isu.ru/cgi-bin/new-client?contest_id=102](http://olymp3.isu.ru/cgi-bin/new-client?contest_id=102), *задача 03*.
+```
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    int t;
+    if (!(std::cin >> t)) return 0;
+
+    std::vector<int> a(t);
+
+    for (int i = 0; i < t; ++i) {
+        long long p1, q1, p2, q2, p3, q3, p4, q4;
+        std::cin >> p1 >> q1 >> p2 >> q2 >> p3 >> q3 >> p4 >> q4;
+
+        int num1 = p1 * q2 + p2 * q1;
+        int den1 = q1 * q2;
+
+        int num2 = p3 * q4 + p4 * q3;
+        int den2 = q3 * q4;
+
+        int lhs = num1 * den2;
+        int rhs = num2 * den1;
+
+        if (lhs > rhs) {
+            a[i] = 1;
+        }
+        else if (lhs < rhs) {
+            a[i] = -1;
+        }
+        else {
+            a[i] = 0;
+        }
+    }
+    for (int i = 0; i < t; ++i) {
+        std::cout << a[i];
+        if (i < t - 1) {
+            std::cout << " ";
+        }
+    }
+    std::cout << "\n";
+
+    return 0;
+}
+```
+#проверить 
 ## Дополнительные задания
 
 ### Задание 1 **(3)**

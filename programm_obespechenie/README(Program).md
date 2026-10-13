@@ -50,11 +50,11 @@ def factorial(n):
 Итоговая оценка: $Grade = 0.3 \cdot ДЗ + 0.3 \cdot Тесты + 0.4 \cdot Проект$
 
 ### Ссылки
-**Записаться**
-[GitHub репозиторий](https://github.com/kostyaroman01-create/lab_yzyk_programirov/tree/main/programm_obespechenie)
+**Записаться**/
+[GitHub репозиторий](https://github.com/kostyaroman01-create/lab_yzyk_programirov/tree/main/programm_obespechenie)/
 Преподаватели
 ... 
-Иван Иванов — Lead Python Developer
+Иван Иванов — Lead Python Developer/
 Мария Петрова — Data Scientist
 
 ## Самооценка

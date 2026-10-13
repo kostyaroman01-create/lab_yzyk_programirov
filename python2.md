@@ -221,11 +221,13 @@ q1w2e3r4t55
 20
 ```
 s = input().strip()
-total = 0
+
+t = 0
 for ch in s:
     if ch.isdigit():
-        total += int(ch)
-print(total)
+        t += int(ch)
+
+print(t)
 ```
 # задание 10
 Скобки в зазеркалье
@@ -246,12 +248,15 @@ print(total)
 (())())
 ```
 s = input().strip()
-
 def mirror(c):
-    return ')' if c == '(' else '('
-
-result = ''.join(mirror(c) for c in reversed(s))
-print(result)
+    if c == '(':
+        return ')'
+    else:
+        return '('
+r = ""
+for c in reversed(s):
+    r += mirror(c)
+print(r)
 ```
 # задание 11
 Разворот слов
@@ -270,8 +275,11 @@ Olya mirror Yalo
 aylO rorrim olaY 
 ```
 s = input()
-words = s.split()
-print(' '.join(w[::-1] for w in words))
+a = s.split()
+r = []
+for w in a:
+    r.append(w[::-1])
+print(' '.join(r))
 ```
 # задание 12
 Минимальные делители
@@ -295,7 +303,7 @@ def min_divisor(n):
         if n % d == 0:
             return d
         d += 1
-    return n   # n простое
+    return n 
 
 nums = list(map(int, input().split()))
 print(' '.join(str(min_divisor(n)) for n in nums))
@@ -346,17 +354,17 @@ print(s)
 2:3
 ```
 n = int(input())
-masha = 0
-dasha = 0
+m = 0
+d = 0
 
-for _ in range(n):
-    num = int(input())
-    if num % 3 == 0:
-        masha += 2
+for i in range(n):
+    n = int(input())
+    if n % 3 == 0:
+        m += 2
     else:
-        dasha += 1
+        d += 1
 
-print(f"{masha}:{dasha}")
+print(f"{m}:{d}")
 ```
 # задание 15
 Прибыль
@@ -379,13 +387,13 @@ print(f"{masha}:{dasha}")
 9
 ```
 n = int(input())
-total = 0
+t = 0
 
-for _ in range(n):
-    income, cost = map(int, input().split())
-    profit = income - cost
-    if profit > 0:
-        total += profit
+for i in range(n):
+    n, c = map(int, input().split())
+    p = n - c
+    if p > 0:
+        t += p
 
 print(total)
 ```

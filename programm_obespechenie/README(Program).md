@@ -54,8 +54,8 @@ def factorial(n):
 [GitHub репозиторий](https://github.com/kostyaroman01-create/lab_yzyk_programirov/tree/main/programm_obespechenie)\
 Преподаватели
 ... 
-Иван Иванов — Lead Python Developer\
-Мария Петрова — Data Scientist
+> Иван Иванов — Lead Python Developer\
+> Мария Петрова — Data Scientist
 
 ## Самооценка
 - [x] H1-заголовок: Курс «Python для начинающих»

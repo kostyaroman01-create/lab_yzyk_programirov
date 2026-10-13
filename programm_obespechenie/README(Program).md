@@ -53,7 +53,6 @@ def factorial(n):
 **Записаться**\
 [GitHub репозиторий](https://github.com/kostyaroman01-create/lab_yzyk_programirov/tree/main/programm_obespechenie)\
 ## Преподаватели
-... 
 > Иван Иванов — Lead Python Developer\
 > Мария Петрова — Data Scientist
 

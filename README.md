@@ -25,11 +25,13 @@ int main() {
 #include <iostream>
 #include <cmath>
 int main() {
-   double x = 0;
-   const auto Pi = std::acos(0) * 2;
-   const_cast<double>(Pi)= 3.1;
-   std::cout << Pi << std::endl;
-   return 0;
+	double x = 0;
+	const auto Pi = std::acos(0) * 2;
+	std::cout << Pi << std::endl;
+	double* p = const_cast<double*>(&Pi);
+	*p = 0.0;
+	std::cout << Pi << std::endl;
+	return 0;
 }
 
 ### Задание 2 **(2)**
@@ -51,7 +53,7 @@ int main() {
 }
 ```
 *Нужны ли в этой программе вложенные фигурные скобки? Дайте подробный ответ с объяснением причин.*
-
+Это не скомпилируется: во внешней области видимости main переменные x и y уже объявлены как int, и повторно объявить их как double в той же области нельзя — компилятор выдаст ошибку вида «redeclaration of 'double x'» / «conflicting declaration».
 
 ### Задание 3 **(2)**
 *Проверьте работу следующего фрагмента программы на С++.*

@@ -14,7 +14,12 @@
 101
 Результат работы
 5 20
+import math
 
+a=int(input())
+k = math.ceil(a/25)
+s= math.floor(a/k)
+print(k, s)
 
 # задание 2
 Двоичная запись

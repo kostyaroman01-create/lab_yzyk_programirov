@@ -155,9 +155,9 @@ def dvoich(n):
         return "0"
 
 n = int(input())
-ns = map(int, input().split())
+n1 = map(int, input().split())
 r = []
-for i in ns:
+for i in n1:
     x = dvoich(i)
     y = len(x)
     y1 = dvoich(y)
